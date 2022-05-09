@@ -14,7 +14,14 @@ def factorial(n):
 
 
 # reverse
+def reverse(text):
+    if len(text) <= 1:
+        return text
+    
+    first_character = text[0]
+    remaining = text[1:]
 
+    return reverse(remaining) + first_character
 
 
 # bunny
